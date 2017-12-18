@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Pokeball Collector</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style2.css">
+</head>
+<body>
+	<div class="header">
+		<h1>Pokeball Collector!</h1>
+	</div>
+	<div class="directions">
+		<h3>How to play the game!</h3>
+		</br>
+		<ol>
+			<li>A random number will be generated at the start of the game.</li>
+			<li>There are four Pokeballs below.</li>
+			<ul>
+				<li>Pokeball</li>
+				<li>Greatball</li>
+				<li>Ultraball</li>
+				<li>Masterball</li>
+			</ul>
+			<li>By clicking on one of the types of pokeballs, you will add a specific amount of points to your total score.</li>
+			<li>You can only win if the amount of points you add up equals the randomly generated number.</li>
+			<li>You lose if the numbers do not match up.</li>
+			<li>You will have to figure out how many points each type of pokeball equals by pressing on the picture.</li>
+			<li>Each time the game starts over it will randomly generate the values of each pokeball.</li>
+		</ol>
+	</div>
+	<div class="numberToMatch">
+		<h2>Number To Match:
+			<span id= "matchThisNumber"></span>
+		</h2>
+	</div>
+	<div class="winsAndLosses">
+		<h2>Wins:
+			<span id= "numberOfWins"></span>
+			</br>
+			Losses: 
+			<span id= "numberOfLosses"></span>
+		</h2>
+	</div>
+	<div class="pokeballs">
+		<img src="assets/images/pokeball.png" class=ballImage id="first" alt="Pokeball">
+		<img src="assets/images/greatball.png" class=ballImage id="second" alt="Greatball">
+		<img src="assets/images/ultraball.png" class=ballImage id= "third" alt="Ultraball">
+		<img src="assets/images/masterball.png" class=ballImage id= "fourth" alt="Masterball">
+	</div>
+	<div class="userTotalScore">
+		<h2>Your total score is:
+			<span id="userTotalScore"></span>
+		</h2>
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
